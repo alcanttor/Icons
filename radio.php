@@ -5,6 +5,7 @@
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
                     <circle cx="12" cy="12" r="6" stroke="#000" stroke-width="1.5" fill="none" />
+                    <circle class="radio_selected" cx="12" cy="12" r="3" fill="red" opacity="0" />
                 </svg>
                 <input id="form_6_1-element-35-0" type="radio" name="Radio_29" value="Male">
                 <label for="form_6_1-element-35-0"> Male</label>
@@ -12,6 +13,7 @@
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
                     <circle cx="12" cy="12" r="6" stroke="#000" stroke-width="1.5" fill="none" />
+                    <circle class="radio_selected" cx="12" cy="12" r="3" fill="red" opacity="0" />
                 </svg>
                 <input id="form_6_1-element-35-1" type="radio" name="Radio_29" value="Female">
                 <label for="form_6_1-element-35-1"> Female</label>
@@ -19,6 +21,7 @@
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
                     <circle cx="12" cy="12" r="6" stroke="#000" stroke-width="1.5" fill="none" />
+                    <circle class="radio_selected" cx="12" cy="12" r="3" fill="red" opacity="0" />
                 </svg>
                 <input id="form_6_1-element-35-2" type="radio" name="Radio_29" value="Other">
                 <label for="form_6_1-element-35-2"> Other</label>
