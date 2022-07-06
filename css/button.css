@@ -1,0 +1,136 @@
+/* For RegistrationMagic */
+
+.rm-admin-btn {
+    appearance: none;
+    font-size: 1rem;
+    height: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+    position: relative;
+}
+
+.rm-btn-primary {
+    border-width: 0px;
+    color: white;
+    background-color: #2271B1;
+}
+
+.rm-btn-secondary {
+    border: 1.5px solid #2271B1;
+    color: #2271B1;
+    background-color: white;
+}
+
+.rm-btn-primary .rm-btn-ripple {
+    background-color: #358FD8;
+}
+
+.rm-btn-secondary .rm-btn-ripple {
+    background-color: #EEF6FC;
+}
+
+.rm-btn-ripple {
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    appearance: button-bevel;
+    transition: 0.3s ease-out 0.1s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.rm-admin-btn:hover .rm-btn-ripple {
+    animation: rm-ripple 0.4s ease-out 1 normal forwards;
+}
+
+.rm-btn-primary:active .rm-btn-ripple {
+    background-color: #2E5E84;
+}
+
+.rm-btn-secondary:active .rm-btn-ripple {
+    background-color: #CCE3F5;
+}
+
+@keyframes rm-ripple {
+    from {width: 0; height: 0; left: 50%; top: 50%;}
+    to {width: 200px; height: 200px; left: calc(50% - 100px); top: calc(50% - 100px);}
+}
+
+.rm-btn-label {
+    position: relative;
+    z-index: 99;
+}
+
+/* For EventPrime */
+
+.ep-admin-btn {
+    appearance: none;
+    font-size: 1rem;
+    height: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+    position: relative;
+}
+
+.ep-btn-primary {
+    border-width: 0px;
+    color: white;
+    background-color: #617FDE;
+}
+
+.ep-btn-secondary {
+    border: 1.5px solid #617FDE;
+    color: #617FDE;
+    background-color: white;
+}
+
+.ep-btn-primary .ep-btn-ripple {
+    background-color: #8098E5;
+}
+
+.ep-btn-secondary .ep-btn-ripple {
+    background-color: #EEF1FB;
+}
+
+.ep-btn-ripple {
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    appearance: button-bevel;
+    transition: 0.3s ease-out 0.1s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.ep-admin-btn:hover .ep-btn-ripple {
+    animation: ep-ripple 0.4s ease-out 1 normal forwards;
+}
+
+.ep-btn-primary:active .ep-btn-ripple {
+    background-color: #596BA6;
+}
+
+.ep-btn-secondary:active .ep-btn-ripple {
+    background-color: #CCD6F4;
+}
+
+@keyframes ep-ripple {
+    from {width: 0; height: 0; left: 50%; top: 50%;}
+    to {width: 200px; height: 200px; left: calc(50% - 100px); top: calc(50% - 100px);}
+}
+
+.ep-btn-label {
+    position: relative;
+    z-index: 99;
+}
+
