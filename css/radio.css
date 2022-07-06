@@ -1,0 +1,37 @@
+.rminput .rmradio li {
+    list-style: none;
+    padding: 0.25rem 0;
+}
+
+.rminput .rmradio li input[type="radio"] {
+    appearance: none;
+    display: none;
+}
+
+.rminput .rmradio li label {
+    position: relative;
+}
+
+.rminput .rmradio li svg {
+    position: absolute;
+    left: 0;
+    vertical-align: middle;
+    stroke-dasharray: 38;
+    stroke-dashoffset: 38;
+}
+
+@keyframes radio {
+    to {stroke-dashoffset: 0}
+}
+
+@keyframes move-label {
+    from {left: 0px;}
+    to {left: 24px;}
+}
+
+.rminput .rmradio {
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+}
