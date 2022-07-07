@@ -1,16 +1,21 @@
 $(document).ready(function () {
 
     $("li").children("label").each(function (index) {
-        $(this).css("animation", "move-label 0.5s ease-in " + ((index + 1) / 2) + "s normal forwards 1");
+        $(this).css("animation", "label-appear 0.5s ease-in " + ((index + 0.5) / 2) + "s normal forwards 1");
     });    
     
     $("li").children("svg").each(function (index) {
-        $(this).css("animation", "radio 0.5s ease-in " + ((index + 2) / 2) + "s normal forwards 1");
+        $(this).css("animation", "draw-radio 0.5s ease-in " + ((index + 1) / 2) + "s normal forwards 1");
     });
     
-    $("ul.rmradio").find("label").click( function () {
-        $("ul.rmradio").find(".radio_selected").attr("opacity", "0");
-        $(this).siblings("input").prop("checked", true);
-        $(this).siblings("svg").children(".radio_selected").attr("opacity", "1");
+    $("ul.rmradio").find("li").hover( function () {
+        $("ul.rmradio").find(".rm-frontend-form-radio-hover").attr("opacity", "0");
+        $(this).find("svg").children(".rm-frontend-form-radio-hover").attr("opacity", "0.2");
+    });
+    
+    $("ul.rmradio").find("li").click( function () {
+        $("ul.rmradio").find(".rm-frontend-form-radio-checked").attr("opacity", "0");
+        $(this).find("input").prop("checked", true);
+        $(this).find("svg").children(".rm-frontend-form-radio-checked").attr("opacity", "1");
     });
 });
